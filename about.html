@@ -11,18 +11,22 @@
             height: 493px;
             min-width: 1400px;
         }
+
         .aboutBanner {
             width: 100%;
             height: 443px;
         }
+
         .introduce {
             width: 100%;
         }
+
         @media (min-width: 1200px) {
             .center {
                 width: 1200px;
             }
         }
+
         .center {
             position: relative;
             width: 100%;
@@ -31,6 +35,7 @@
             margin: 0 auto;
             text-align: center;
         }
+
         .wordTitle {
             padding-top: 50px;
             padding-bottom: 15px;
@@ -39,6 +44,7 @@
             font-family: "微软雅黑";
             color: #232323;
         }
+
         .english {
             height: 42px;
             line-height: 42px;
@@ -47,6 +53,7 @@
             color: #444;
             font-size: 10px;
         }
+
         .culture {
             width: 1200px;
             margin: 0 auto;
@@ -56,18 +63,21 @@
             padding: 35px 2.5%;
             height: 497px;
         }
+
         .twoModel {
             margin-bottom: 5px;
             text-align: center;
             font-size: 20px;
             font-weight: bold;
         }
+
         .twoModelEnglish {
             margin-bottom: 8px;
             font-size: 14px;
             text-transform: uppercase;
             text-align: center;
         }
+
         .words {
             line-height: 24px;
             text-align: center;
@@ -77,41 +87,48 @@
             margin-bottom: 20px;
             overflow: hidden;
         }
+
         .boxS {
             width: 1140px;
             display: flex;
             justify-content: space-between;
             margin: 0 auto;
             flex-wrap: wrap;
-            padding-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .boxS div{
-            background-color: #cccccc;
-            width: 547px;
+
+        .boxS .box {
+            background-color: #F7F7F7;
+            width: 530px;
             height: 307px;
             margin: 0 auto;
             margin-bottom: 20px;
         }
+
         .bgYellow {
             background: #ffd619;
             padding: 27px 0;
         }
+
         .rootCon {
-                position: relative;
-                width: 1200px;
-                height: 92%;
-                padding: 1% 1%;
-                margin-left: auto;
-                margin-right: auto;
-                background: #212121;
-                color: #fff;
+            position: relative;
+            width: 1200px;
+            height: 92%;
+            padding: 1% 1%;
+            margin-left: auto;
+            margin-right: auto;
+            background: #212121;
+            color: #fff;
         }
+
         .rootCon .tit {
             margin-bottom: 15px;
             text-align: center;
             font-size: 24px;
             font-weight: bold;
         }
+
         .rootCon p {
             line-height: 24px;
             text-align: center;
@@ -119,6 +136,34 @@
             height: 48px;
             overflow: hidden;
         }
+
+        .p1 {
+            margin-top: 35px;
+            font-size: 36px;
+            color: #222;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .blackLine {
+            width: 120px;
+            height: 10px;
+            margin-left: 20px;
+            border-bottom: 1px solid #000000;
+        }
+
+        .p2 {
+            margin-top: 24px;
+            line-height: 24px;
+            text-indent: 2em;
+            color: #555;
+            text-align: left;
+            padding: 20px;
+        }
+
+        /*.special {*/
+        /*padding: 20px;*/
+        /*}*/
     </style>
 </head>
 
@@ -137,9 +182,9 @@
     </nav>
     <a href="index.html"><img id="im" src="img/logo.jpg" alt="图片不存在"/></a>
     <!--中间图片位置-->
-   <div>
-       <img src="img/about/about.jpg" alt="" class="aboutBanner">
-   </div>
+    <div>
+        <img src="img/about/about.jpg" alt="" class="aboutBanner">
+    </div>
 </header>
 <article>
     <div class="introduce">
@@ -159,20 +204,39 @@
                 <div><img src="img/about/p1-1Bg.jpg" alt=""></div>
                 <p class="words">经营企业，逐利则败；逐产品精进，则得人心。管理逐身先则得拥护,逐放逸则失爱戴。</p>
                 <div class="boxS">
-                    <div><img src="img/about/561e04bba037a.jpg" alt="" width="100%" height="100%"></div>
-                    <div></div>
-                    <div></div>
-                    <div><img src="img/about/577340d9e8b33.jpg" alt="" width="100%" height="100%"></div>
-                    <div><img src="img/about/561e0502d1cef.jpg" alt="" width="100%" height="100%"></div>
-                    <div></div>
-                    <div></div>
-                    <div><img src="img/about/561780b8dd40a.jpg" alt="" width="100%" height="100%"></div>
+                    <div class="box"><img src="img/about/561e04bba037a.jpg" alt="" width="100%" height="100%"></div>
+                    <div class="box special">
+                        <p class="p1">简介 PROFILE</p>
+                        <div class="blackLine"></div>
+                        <p class="p2">
+                            长期以来，周黑鸭始终坚守连锁经营管理模式和“质量第一，信誉至上，保持特色，持续发展”的经营理念。周黑鸭品牌有数百家直营门店遍布北京、上海、天津、重庆及武汉、广州、长沙、杭州、郑州、南京、南昌等省会城市。同时我们分别在湖北省武汉及上海拥有两个大型现代化生产中心，为支持不断扩充的零售店铺网络及不断发展的网上渠道，我们正规划建设新增华中地区及华南地区生产中心。</p>
+                    </div>
+                    <div class="box special">
+                        <p class="p1">工作 WORKING</p>
+                        <div class="blackLine"></div>
+                        <p class="p2">
+                            湖北周黑鸭食品工业园有限公司成立于湖北武汉，“会娱乐更快乐”是周黑鸭的品牌理念。努力成为年轻、有活力兼具文化底蕴、生活品味的品牌是周黑鸭的品牌目标。周黑鸭相信，可口、卫生、方便的产品，能够为消费者带来更大的乐趣和更好的体验。</p>
+                    </div>
+                    <div class="box"><img src="img/about/577340d9e8b33.jpg" alt="" width="100%" height="100%"></div>
+                    <div class="box"><img src="img/about/561e0502d1cef.jpg" alt="" width="100%" height="100%"></div>
+                    <div class="box special">
+                        <p class="p1">声誉 REPUTATION</p>
+                        <div class="blackLine"></div>
+                        <p class="p2">“周黑鸭”产品不仅深受年轻白领和学生一族的喜爱，在消费者心目中享有一定的美誉度和知名度。2013年周黑鸭正式获得“国家农业产业化重点龙头企业”的资格认定。</p>
+                    </div>
+                    <div class="box special">
+                        <p class="p1">梦想 DREAM</p>
+                        <div class="blackLine"></div>
+                        <p class="p2">十余年的发展历程“周黑鸭”人始终践行“食”字理论和“树根”文化，为振兴中国民族产业，以产业报效祖国的决心而努力奋斗，”矢志实现“百年品牌，走向世界”的梦想！</p>
+                    </div>
+                    <div class="box"><img src="img/about/561780b8dd40a.jpg" alt="" width="100%" height="100%"></div>
                 </div>
                 <div class="bgYellow">
                     <div class="rootCon">
                         <div class="tit">树根文化</div>
                         <div><img src="img/about/rootBg.png" alt=""></div>
-                        <p>大树之繁荣，皆因其根！根深则叶茂，根深则茁壮，因此无论风吹雨打，大树始终傲立于天地之间！同理，做企业不是观其规模多大，而是看其抗风险能力有多强，能否可持续发展，造福万物生灵。企业只有根扎于地下，才能盎然挺拔，生生不息，搏击风雨，基业长青！</p>
+                        <p>
+                            大树之繁荣，皆因其根！根深则叶茂，根深则茁壮，因此无论风吹雨打，大树始终傲立于天地之间！同理，做企业不是观其规模多大，而是看其抗风险能力有多强，能否可持续发展，造福万物生灵。企业只有根扎于地下，才能盎然挺拔，生生不息，搏击风雨，基业长青！</p>
                     </div>
                 </div>
             </div>
@@ -181,7 +245,7 @@
 </article>
 <footer>
     <div id="box8">
-        <div id="tts"><img src="img/contactBg.png" alt="" />
+        <div id="tts"><img src="img/contactBg.png" alt=""/>
             <div id="ts">
                 <p>联系我们</p>
                 <p>contact</p>
@@ -200,25 +264,25 @@
             <a href="">企业历程</a>
         </div>
         <div id="b8">
-            <a href=""><span>品牌活动</span></a><br />
+            <a href=""><span>品牌活动</span></a><br/>
             <a href="">品牌活动推广</a>
             <a href="">品牌资讯</a>
         </div>
     </div>
     <div id="b9">
         <div id="box9">
-            <img id="i" src="img/govIcon.gif" alt="" width="30px" height="30px" />
+            <img id="i" src="img/govIcon.gif" alt="" width="30px" height="30px"/>
             <p>COPYRIGHT © 2011 ZHOUHEIYA. ALL RIGHTS RESERVED鄂ICP 备07004825号 powered by <a href="">JL-TECH</a> 京伦科技</p>
-            <img id="i1" src="img/police.png" alt="" />
-            <img id="i2" src="img/pic.gif" alt="" />
+            <img id="i1" src="img/police.png" alt=""/>
+            <img id="i2" src="img/pic.gif" alt=""/>
             <div id="fbox">
-                <img src="img/topBg.png" alt="" />
+                <img src="img/topBg.png" alt=""/>
                 <div id="f2box">
                     <div class="my"></div>
                     <div id="zt">
                         <div class="my"></div>
                         <h3>周富裕</h3>
-                        <img src="img/56a6df8dc6e81.jpg" alt="" />
+                        <img src="img/56a6df8dc6e81.jpg" alt=""/>
                         <ul>
                             <li style="color:white"></li>
                             <li></li>
@@ -227,7 +291,7 @@
                     <div id="zt2">
                         <div class="my"></div>
                         <h3>官方微信</h3>
-                        <img src="img/56a6df4ae2961.jpg" alt="" />
+                        <img src="img/56a6df4ae2961.jpg" alt=""/>
                         <ul>
                             <li></li>
                             <li style="color:white"></li>
