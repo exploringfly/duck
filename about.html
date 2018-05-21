@@ -160,10 +160,11 @@
             text-align: left;
             padding: 20px;
         }
-
-        /*.special {*/
-        /*padding: 20px;*/
-        /*}*/
+    </style>
+    <style>
+        #box1 a{
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -171,13 +172,13 @@
 <header>
     <nav>
         <div id=box1>
-            <div><span>关于周黑鸭</span><span class="sp2">ABOUT ZHOU HEI YA</span></div>
-            <div><span>门店分布</span><span class="sp2">STORE DISTRIBUTION</span></div>
-            <div><span>品牌活动</span><span class="sp2">BRAND ACTIVITY</span></div>
-            <div><span>产品中心</span><span class="sp2">PRODECT CENTER</span></div>
+            <div><span>关于周黑鸭</span><span class="sp2"><a href="about.html">ABOUT ZHOU HEI YA</a></span></div>
+            <div><span>门店分布</span><span class="sp2"><a href="store.html">STORE DISTRIBUTION</a></span></div>
+            <div><span><a href="brand.html">品牌活动</a></span><span class="sp2"><a href="brand.html">BRAND ACTIVITY</a></span></div>
+            <div><span><a href="product.html">产品中心</a></span><span class="sp2"><a href="product.html">PRODECT CENTER</a></span></div>
             <div><span>在线招聘</span><span class="sp2">ONLINE RECRUITMENT</span></div>
             <div><span>投资者关系</span><span class="sp2">INVESTOR CONTACT</span></div>
-            <div><span>联系我们</span><span class="sp2">CONTACT US</span></div>
+            <div><span><a href="contact.html">联系我们</a></span><span class="sp2"><a href="contact.html">CONTACT US</a></span></div>
         </div>
     </nav>
     <a href="index.html"><img id="im" src="img/logo.jpg" alt="图片不存在"/></a>
@@ -196,7 +197,14 @@
             </div>
 
             <div class="culture">
-                <img src="img/about/culture.png" alt="">
+                <div style="float: left; width: 30%;">
+                    <img src="img/about/culture.png" alt="" style="width: 108%; margin-top: 40px;">
+                </div>
+                <div style="float: left;width: 61%; height: 100%">
+                    <video style=" " controls="controls">
+                        <source src="audio/zhouheiya.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <div>
                 <p class="twoModel">周黑鸭祖训</p>

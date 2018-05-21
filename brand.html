@@ -4,8 +4,24 @@
     <meta charset="utf-8">
     <title>周黑鸭国际控股有限公司</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/about.css">
     <script src="js/zhy.js"></script>
+    <style>
+        input {
+            background-color: #fff;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .active {
+            background-color: #212121;
+            color: #ffffff;
+        }
+        .cont a:hover {
+            background-color: #007AFF;
+            color: #ffffff;
+        }
+    </style>
     <style>
         header {
             height: 493px;
@@ -125,19 +141,41 @@
             margin-top: 20px;
         }
     </style>
+    <style>
+        #box1 a{
+            color: #fff;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var odiv = document.getElementsByClassName("cont");
+            var oipt = document.getElementsByTagName("input");
+            for(var i = 0; i < oipt.length; i++) {
+                oipt[i].index = i;
+                oipt[i].onclick = function() {
+                    for(var i = 0; i < oipt.length; i++) {
+                        odiv[i].style.display = "none";
+                        oipt[i].className = "";
+                    }
+                    odiv[this.index].style.display = "block";
+                    this.className = 'active';
+                };
+            }
+        }
+    </script>
 </head>
 
 <body>
 <header>
     <nav>
         <div id=box1>
-            <div><span>关于周黑鸭</span><span class="sp2">ABOUT ZHOU HEI YA</span></div>
-            <div><span>门店分布</span><span class="sp2">STORE DISTRIBUTION</span></div>
-            <div><span>品牌活动</span><span class="sp2">BRAND ACTIVITY</span></div>
-            <div><span>产品中心</span><span class="sp2">PRODECT CENTER</span></div>
+            <div><span><a href="about.html">关于周黑鸭</a></span><span class="sp2"><a href="about.html">ABOUT ZHOU HEI YA</a></span></div>
+            <div><span><a href="store.html">门店分布</a></span><span class="sp2"><a href="store.html">STORE DISTRIBUTION</a></span></div>
+            <div><span><a href="brand.html">品牌活动</a></span><span class="sp2"><a href="brand.html">BRAND ACTIVITY</a></span></div>
+            <div><span><a href="product.html">产品中心</a></span><span class="sp2">PRODECT CENTER</span></div>
             <div><span>在线招聘</span><span class="sp2">ONLINE RECRUITMENT</span></div>
             <div><span>投资者关系</span><span class="sp2">INVESTOR CONTACT</span></div>
-            <div><span>联系我们</span><span class="sp2">CONTACT US</span></div>
+            <div><span><a href="contact.html">联系我们</a></span><span class="sp2"><a href="contact.html">CONTACT US</a></span></div>
         </div>
     </nav>
     <a href="index.html"><img id="im" src="img/logo.jpg" alt="图片不存在"/></a>
@@ -154,93 +192,102 @@
                 <p><img src="img/about/nyTitLine.jpg" alt=""></p>
                 <p class="english">BRAND PROMOTION INFORMATION</p>
             </div>
-            <ul>
-                <li>
-                    <div class="brandWords">
-                        <div style="float: left">
-                            <img src="img/brand/568ddd90f174f.jpg" alt="">
+            <div style="margin-bottom: 30px">
+                <input type="button" value="品牌活动推广" class="active">
+                <input type="button" value="品牌资讯">
+            </div>
+            <div class="cont" style="display: block">
+                <ul>
+                    <li>
+                        <div class="brandWords">
+                            <div style="float: left">
+                                <img src="img/brand/568ddd90f174f.jpg" alt="">
+                            </div>
+                            <div style="float: right; text-align: left">
+                                <p class="brandTitle">这个圣诞”小粒“和你一起狂欢</p>
+                                <p class="brandTime">时间：2015.12.24-2015.12.25</p>
+                                <p class="brandArea">活动范围：北京、上海、广州、南京、长沙、武汉、郑州、重庆<br/>
+                                    活动内容：<br/>
+                                </p>
+                                <span class="brandTime">今年圣诞，我们玩了个大的，特邀鸭鸭圣诞老人携礼空降...</span>
+                                </br>
+                                <a href="" class="more">了解更多信息</a>
+                            </div>
                         </div>
-                        <div style="float: right; text-align: left">
-                            <p class="brandTitle">这个圣诞”小粒“和你一起狂欢</p>
-                            <p class="brandTime">时间：2015.12.24-2015.12.25</p>
-                            <p class="brandArea">活动范围：北京、上海、广州、南京、长沙、武汉、郑州、重庆<br/>
-                                活动内容：<br/>
-                            </p>
-                            <span class="brandTime">今年圣诞，我们玩了个大的，特邀鸭鸭圣诞老人携礼空降...</span>
-                            </br>
-                            <a href="" class="more">了解更多信息</a>
+                    </li>
+                    <li>
+                        <div class="brandWords">
+                            <div style="float: left">
+                                <img src="img/brand/5632cefa4e6df.jpg" alt="">
+                            </div>
+                            <div style="float: right; text-align: left">
+                                <p class="brandTitle">我和小粒的浪漫之旅</p>
+                                <p class="brandTime">时间：2015年10月24日—2015年10月25日 </p>
+                                <p class="brandArea">活动范围：天津、武汉、深圳、长沙、重庆<br/>
+                                    活动内容：<br/>
+                                </p>
+                                <p class="brandTime">10月24日～25日我们在天津、武汉、深圳、长沙、重庆同时
+                                    <br/>开展20余场以“我和小粒的浪漫之旅”为主题的推广活动。</p>
+                                <a href="" class="more">了解更多信息</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="brandWords">
-                        <div style="float: left">
-                            <img src="img/brand/5632cefa4e6df.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="brandWords">
+                            <div style="float: left">
+                                <img src="img/brand/561741a622551.jpg" alt="">
+                            </div>
+                            <div style="float: right; text-align: left">
+                                <p class="brandTitle">周黑鸭 新生报到</p>
+                                <p class="brandTime">时间：2015年9月1日—2015年9月30日 </p>
+                                <p class="brandArea">活动范围：北京、上海、广州、重庆、武汉<br/>
+                                    活动内容：<br/>
+                                </p>
+                                <p class="brandTime">抽取任务卡玩游戏，赢得属于自己的专属奖品，更有终极大
+                                    <br/>奖——周边游#你出去玩 鸭鸭买单#</p>
+                                <a href="" class="more">了解更多信息</a>
+                            </div>
                         </div>
-                        <div style="float: right; text-align: left">
-                            <p class="brandTitle">我和小粒的浪漫之旅</p>
-                            <p class="brandTime">时间：2015年10月24日—2015年10月25日 </p>
-                            <p class="brandArea">活动范围：天津、武汉、深圳、长沙、重庆<br/>
-                                活动内容：<br/>
-                            </p>
-                            <p class="brandTime">10月24日～25日我们在天津、武汉、深圳、长沙、重庆同时
-                                <br/>开展20余场以“我和小粒的浪漫之旅”为主题的推广活动。</p>
-                            <a href="" class="more">了解更多信息</a>
+                    </li>
+                    <li>
+                        <div class="brandWords">
+                            <div style="float: left">
+                                <img src="img/brand/561769f944aa2.jpg" alt="">
+                            </div>
+                            <div style="float: right; text-align: left">
+                                <p class="brandTitle">光谷啤酒节——啃鸭脖大赛</p>
+                                <p class="brandTime">时间：2015年8月2日 </p>
+                                <p class="brandArea">活动范围：武汉德国风情街柏林广场<br/>
+                                    活动内容：<br/>
+                                </p>
+                                <p class="brandTime">“啃鸭脖”战队可以要在最短的时间内将一盒350克的鸭脖
+                                    <br/>啃食干净，所剩骨头只允许在150克以内（最先达到要求的)</p>
+                                <a href="" class="more">了解更多信息</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="brandWords">
-                        <div style="float: left">
-                            <img src="img/brand/561741a622551.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="brandWords">
+                            <div style="float: left">
+                                <img src="img/brand/56176a1776417.jpg" alt="">
+                            </div>
+                            <div style="float: right; text-align: left">
+                                <p class="brandTitle">“周黑鸭杯”湖北省大学生营销大赛</p>
+                                <p class="brandTime">时间：2015年3月20日—2015年6月6日 </p>
+                                <p class="brandArea">活动范围：湖北省全日制高校 <br/>
+                                    活动内容：<br/>
+                                </p>
+                                <p class="brandTime">本次大赛由湖北省市场营销学会主办、周黑鸭食品股份有限
+                                    <br/>公司承办，结合业界精英与行业资深教师为引领学生探索实</p>
+                                <a href="" class="more">了解更多信息</a>
+                            </div>
                         </div>
-                        <div style="float: right; text-align: left">
-                            <p class="brandTitle">周黑鸭 新生报到</p>
-                            <p class="brandTime">时间：2015年9月1日—2015年9月30日 </p>
-                            <p class="brandArea">活动范围：北京、上海、广州、重庆、武汉<br/>
-                                活动内容：<br/>
-                            </p>
-                            <p class="brandTime">抽取任务卡玩游戏，赢得属于自己的专属奖品，更有终极大
-                                <br/>奖——周边游#你出去玩 鸭鸭买单#</p>
-                            <a href="" class="more">了解更多信息</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="brandWords">
-                        <div style="float: left">
-                            <img src="img/brand/561769f944aa2.jpg" alt="">
-                        </div>
-                        <div style="float: right; text-align: left">
-                            <p class="brandTitle">光谷啤酒节——啃鸭脖大赛</p>
-                            <p class="brandTime">时间：2015年8月2日 </p>
-                            <p class="brandArea">活动范围：武汉德国风情街柏林广场<br/>
-                                活动内容：<br/>
-                            </p>
-                            <p class="brandTime">“啃鸭脖”战队可以要在最短的时间内将一盒350克的鸭脖
-                                <br/>啃食干净，所剩骨头只允许在150克以内（最先达到要求的)</p>
-                            <a href="" class="more">了解更多信息</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="brandWords">
-                        <div style="float: left">
-                            <img src="img/brand/56176a1776417.jpg" alt="">
-                        </div>
-                        <div style="float: right; text-align: left">
-                            <p class="brandTitle">“周黑鸭杯”湖北省大学生营销大赛</p>
-                            <p class="brandTime">时间：2015年3月20日—2015年6月6日 </p>
-                            <p class="brandArea">活动范围：湖北省全日制高校 <br/>
-                                活动内容：<br/>
-                            </p>
-                            <p class="brandTime">本次大赛由湖北省市场营销学会主办、周黑鸭食品股份有限
-                                <br/>公司承办，结合业界精英与行业资深教师为引领学生探索实</p>
-                            <a href="" class="more">了解更多信息</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="cont" style="display: block">
+
+            </div>
             <div class="bgYellow">
                 <div class="rootCon">
                     <div class="tit">树根文化</div>
@@ -313,5 +360,9 @@
     </div>
     <div id="box10"></div>
 </footer>
+<script src="js/tabs.js"></script>
+<script>
+    new Tab();
+</script>
 </body>
 </html>
