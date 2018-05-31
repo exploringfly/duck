@@ -2,113 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>周黑鸭国际控股有限公司</title>
     <link rel="stylesheet" href="css/common.css">
-    <script src="js/zhy.js"></script>
+    <link rel="stylesheet" href="css/store.css">
     <script type="text/javascript" src="js/b3e1afb4e513439db9930a5c3752490f.js"></script>
-    <style>
-        header {
-            height: 493px;
-            min-width: 1400px;
-        }
-
-        .aboutBanner {
-            width: 100%;
-            height: 443px;
-        }
-
-        .introduce {
-            width: 100%;
-        }
-
-        @media (min-width: 1200px) {
-            .center {
-                width: 1200px;
-            }
-        }
-
-        .center {
-            position: relative;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .wordTitle {
-            padding-top: 50px;
-            padding-bottom: 15px;
-            font-size: 60px;
-            font-weight: bold;
-            font-family: "微软雅黑";
-            color: #232323;
-        }
-
-        .english {
-            height: 42px;
-            line-height: 42px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #444;
-            font-size: 10px;
-        }
-
-        .bgYellow {
-            background: #ffd619;
-            padding: 27px 0;
-        }
-
-        .rootCon {
-            position: relative;
-            width: 1200px;
-            height: 92%;
-            padding: 1% 1%;
-            margin-left: auto;
-            margin-right: auto;
-            background: #212121;
-            color: #fff;
-        }
-
-        .rootCon .tit {
-            margin-bottom: 15px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .rootCon p {
-            line-height: 24px;
-            text-align: center;
-            font-size: 14px;
-            height: 48px;
-            overflow: hidden;
-        }
-    </style>
-    <style>
-        #box1 a{
-            color: #fff;
-        }
-    </style>
 </head>
 
 <body>
 <header>
     <nav>
         <div id=box1>
-            <div><span>关于周黑鸭</span><span class="sp2"><a href="about.html">ABOUT ZHOU HEI YA</a></span></div>
-            <div><span>门店分布</span><span class="sp2"><a href="store.html">STORE DISTRIBUTION</a></span></div>
-            <div><span><a href="brand.html">品牌活动</a></span><span class="sp2"><a href="brand.html">BRAND ACTIVITY</a></span></div>
-            <div><span>产品中心</span><span class="sp2">PRODECT CENTER</span></div>
-            <div><span>在线招聘</span><span class="sp2">ONLINE RECRUITMENT</span></div>
-            <div><span>投资者关系</span><span class="sp2">INVESTOR CONTACT</span></div>
-            <div><span>联系我们</span><span class="sp2"><a href="contact.html">CONTACT US</a></span></div>
+            <div class="more"><span>更多</span><span class="sp2">更多</span>
+            </div>
+            <div class="except"><span><a href="about.html">关于周黑鸭</a></span><span class="sp2"><a href="about.html">ABOUT ZHOU HEI YA</a></span>
+            </div>
+            <div class="except"><span><a href="store.html">门店分布</a></span><span class="sp2"><a href="store.html">STORE DISTRIBUTION</a></span>
+            </div>
+            <div class="except"><span><a href="brand.html">品牌活动</a></span><span class="sp2"><a
+                    href="brand.html">BRAND ACTIVITY</a></span></div>
+            <div class="except"><span><a href="product.html">产品中心</a></span><span class="sp2"><a href="product.html">PRODECT CENTER</a></span>
+            </div>
+            <div class="except"><span><a href="contact.html">联系我们</a></span><span class="sp2"><a
+                    href="contact.html">CONTACT US</a></span></div>
         </div>
     </nav>
     <a href="index.html"><img id="im" src="img/logo.jpg" alt="图片不存在"/></a>
     <!--中间图片位置-->
     <div>
-        <img src="img/contact/5617874cb34a7.jpg" alt="" class="aboutBanner">
+        <img src="img/store.jpg" alt="" class="aboutBanner">
     </div>
 </header>
 <article>
@@ -120,7 +42,7 @@
                 <p class="english">STORE DISTRIBUTION</p>
             </div>
             <!--地图-->
-            <div style="width:1150px;height:450px;border:#ccc solid 1px;margin: 0 auto;margin-bottom: 40px" id="dituContent"></div>
+            <div class="map" id="dituContent"></div>
             <!--黄色根文化-->
             <div class="bgYellow">
                 <div class="rootCon">
@@ -131,7 +53,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </article>
 <footer>
@@ -194,6 +115,7 @@
     </div>
     <div id="box10"></div>
 </footer>
+<script src="js/zhy.js"></script>
 </body>
 
 <script type="text/javascript">

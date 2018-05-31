@@ -3,157 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>周黑鸭国际控股有限公司</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
-    <script src="js/zhy.js"></script>
-    <style>
-        input {
-            background-color: #fff;
-            width: 200px;
-            height: 50px;
-            line-height: 50px;
-        }
-
-        .active {
-            background-color: #212121;
-            color: #ffffff;
-        }
-        .cont a:hover {
-            background-color: #007AFF;
-            color: #ffffff;
-        }
-    </style>
-    <style>
-        header {
-            height: 493px;
-            min-width: 1400px;
-        }
-
-        .aboutBanner {
-            width: 100%;
-            height: 443px;
-        }
-
-        .introduce {
-            width: 100%;
-        }
-
-        @media (min-width: 1200px) {
-            .center {
-                width: 1200px;
-            }
-        }
-
-        .center {
-            position: relative;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .wordTitle {
-            padding-top: 50px;
-            padding-bottom: 15px;
-            font-size: 60px;
-            font-weight: bold;
-            font-family: "微软雅黑";
-            color: #232323;
-        }
-
-        .english {
-            height: 42px;
-            line-height: 42px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #444;
-            font-size: 10px;
-        }
-
-        .bgYellow {
-            background: #ffd619;
-            padding: 27px 0;
-        }
-
-        .rootCon {
-            position: relative;
-            width: 1200px;
-            height: 92%;
-            padding: 1% 1%;
-            margin-left: auto;
-            margin-right: auto;
-            background: #212121;
-            color: #fff;
-        }
-
-        .rootCon .tit {
-            margin-bottom: 15px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .rootCon p {
-            line-height: 24px;
-            text-align: center;
-            font-size: 14px;
-            height: 48px;
-            overflow: hidden;
-        }
-
-        .brandWords {
-            width: 996px;
-            margin: 0 auto;
-            padding-bottom: 50px;
-            height: 325px;
-            margin-bottom: 50px;
-            border-bottom: 1px solid #c4c4c4;
-        }
-
-        .brandTitle {
-            margin: 30px 0 15px;
-            font-size: 18px;
-            color: #212121;
-            font-weight: bold;
-        }
-
-        .brandTime {
-            overflow: hidden;
-            line-height: 33px;
-            color: #555;
-        }
-
-        .brandArea {
-            line-height: 33px;
-            color: #555;
-            font-weight: bold;
-        }
-
-        .more {
-            display: block;
-            width: 108px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            border-radius: 2px;
-            color: #555;
-            border: 1px solid #555555;
-            margin-top: 20px;
-        }
-    </style>
-    <style>
-        #box1 a{
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="css/brand.css">
     <script>
-        window.onload = function() {
+        window.onload = function () {
             var odiv = document.getElementsByClassName("cont");
             var oipt = document.getElementsByTagName("input");
-            for(var i = 0; i < oipt.length; i++) {
+            for (var i = 0; i < oipt.length; i++) {
                 oipt[i].index = i;
-                oipt[i].onclick = function() {
-                    for(var i = 0; i < oipt.length; i++) {
+                oipt[i].onclick = function () {
+                    for (var i = 0; i < oipt.length; i++) {
                         odiv[i].style.display = "none";
                         oipt[i].className = "";
                     }
@@ -169,13 +29,18 @@
 <header>
     <nav>
         <div id=box1>
-            <div><span><a href="about.html">关于周黑鸭</a></span><span class="sp2"><a href="about.html">ABOUT ZHOU HEI YA</a></span></div>
-            <div><span><a href="store.html">门店分布</a></span><span class="sp2"><a href="store.html">STORE DISTRIBUTION</a></span></div>
-            <div><span><a href="brand.html">品牌活动</a></span><span class="sp2"><a href="brand.html">BRAND ACTIVITY</a></span></div>
-            <div><span><a href="product.html">产品中心</a></span><span class="sp2">PRODECT CENTER</span></div>
-            <div><span>在线招聘</span><span class="sp2">ONLINE RECRUITMENT</span></div>
-            <div><span>投资者关系</span><span class="sp2">INVESTOR CONTACT</span></div>
-            <div><span><a href="contact.html">联系我们</a></span><span class="sp2"><a href="contact.html">CONTACT US</a></span></div>
+            <div class="more"><span>更多</span><span class="sp2">更多</span>
+            </div>
+            <div class="except"><span><a href="about.html">关于周黑鸭</a></span><span class="sp2"><a href="about.html">ABOUT ZHOU HEI YA</a></span>
+            </div>
+            <div class="except"><span><a href="store.html">门店分布</a></span><span class="sp2"><a href="store.html">STORE DISTRIBUTION</a></span>
+            </div>
+            <div class="except"><span><a href="brand.html">品牌活动</a></span><span class="sp2"><a
+                    href="brand.html">BRAND ACTIVITY</a></span></div>
+            <div class="except"><span><a href="product.html">产品中心</a></span><span class="sp2"><a href="product.html">PRODECT CENTER</a></span>
+            </div>
+            <div class="except"><span><a href="contact.html">联系我们</a></span><span class="sp2"><a
+                    href="contact.html">CONTACT US</a></span></div>
         </div>
     </nav>
     <a href="index.html"><img id="im" src="img/logo.jpg" alt="图片不存在"/></a>
@@ -364,5 +229,6 @@
 <script>
     new Tab();
 </script>
+<script src="js/zhy.js"></script>
 </body>
 </html>
